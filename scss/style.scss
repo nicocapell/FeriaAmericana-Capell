@@ -9,8 +9,15 @@ html {
 }
 
 
+// Desafío SASS II//
+
+@import "colores";
+@import "sizes";
+
+
+
 h1,h2,h3 {
-	color: #C7AE83;
+	color: $beige;
 }
 
 h1 {font-family: 'Montserrat', sans-serif;
@@ -32,7 +39,82 @@ h2 {font-family: 'Montserrat', sans-serif;
 	
 }
 
+$tamanioPantalla:mobile;
+.categoriasTitle {
+	@if $tamanioPantalla == desktop {
+	font-size:50px;
+	padding:50px;
+	}@else if $tamanioPantalla == mobile {
+	font-size:25px;
+	padding:20px;
+	text-align: center;
+	}@else{
+	font-size:30px;
+	text-align:justify;
+	}
+}
 
+@for $h1sizes from 1 through 3 {
+	.tamanio-#{$h1sizes}{
+	font-size:18px * $h1sizes;
+	}
+}
+
+@each $color in #214354,#fff,#C7AE83 {
+	.tono-#{$color}{
+	color:$color;
+	text-align:center;
+	text-transform:uppercase;
+	}
+}
+
+$tamanioFuente:(
+h1Desktop:50px,
+h1Mobile:35px,
+h2Desktop:45px,
+h2Mobile:30px,
+pDesktop:18px,
+pMobile:20px
+);
+@each $elementoVista, $tamanio in $tamanioFuente {
+	.elemento-#{$elementoVista}{
+	font-size:$tamanio;
+	}
+}
+
+.btn{
+	width:200px;
+	text-align:center;
+	border:1px solid black;
+	background-color:white;
+	color:black;
+}
+.btn--Hecho{
+	@extend .btn;
+	background-color:white;
+	color:#C7AE83;
+}
+.btn--negado{
+	@extend .btn;
+	background-color:#C7AE83;
+	color:white;
+}
+
+@mixin sizesImg ($width, $height){
+	height:$height;
+	width:$width;
+}
+.sizeProducts{
+	@include sizesImg (300px,300px);
+}
+
+@for $padding from 1 through 5 {
+	.padding-#{$padding}{
+	padding-top:10px * $padding;
+	padding-bottom:10px * $padding;
+	padding-left: 20px * $padding;
+	}
+}
 
 .espaciado {
 	letter-spacing: 2px;
@@ -53,7 +135,7 @@ iframe {
 
 
 
-.productos__tabla {color: #214354;
+.productos__tabla {color: $azul;
     font-size: 2rem;
     margin: 20px
         20px
@@ -63,7 +145,7 @@ iframe {
 
 
 
-.productos__categorias {color:#214354;
+.productos__categorias {color:$azul;
 	margin: 20px
 	20px
 	20px
@@ -72,7 +154,7 @@ iframe {
 
 .selectorTalle1 {
     font-family: 'Montserrat', sans-serif;
-    color: #214354;
+    color: $azul;
     font-size: 2rem;
 	padding: 20px
 	20px
@@ -82,7 +164,7 @@ iframe {
 
 
 
-.contacto__form {color: #214354;
+.contacto__form {color: $azul;
 font-size: 1.5rem;
 padding: 20px
 20px
@@ -91,12 +173,12 @@ padding: 20px
 }
 
 .contacto__form { font-family: 'Montserrat', sans-serif;
-    color: #214354;
+    color:  $azul;
     font-size: 2rem;
 }
 
 
-.nosotros__table {color: #214354;
+.nosotros__table {color:  $azul;
 font-size: 1.5rem;
 margin: 20px
 	20px
@@ -142,14 +224,15 @@ footer {font-family:'Montserrat', sans-serif;
     justify-content: space-around;
     align-items: flex-start;
     margin:  5px 10px 12px 15px; 
-    background-color: white;
+    background-color:$blanco;
 }
+
 
 
 ul {
 	list-style: none;
 	font-family: 'Montserrat', sans-serif;
-    color: #214354;
+    color:  $azul;
     font-size: 2rem;
 }
 
@@ -231,6 +314,8 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2rem;
 }
+
+
 
 
 
