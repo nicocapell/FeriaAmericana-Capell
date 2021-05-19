@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+h1, h2, h3 {
+  color: #C7AE83; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.h2__font {
+  font-size: 2rem;
+  margin: 20px 20px 20px 20px; }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; }
+
+.espaciado {
+  letter-spacing: 2px; }
+
+.subrayado a {
+  text-decoration: none; }
+
+footer .subrayado {
+  text-decoration: none; }
+
+iframe {
+  position: relative; }
+
+.productos__tabla {
+  color: #214354;
+  font-size: 2rem;
+  margin: 20px 20px 20px 20px; }
+
+.productos__categorias {
+  color: #214354;
+  margin: 20px 20px 20px 20px; }
+
+.selectorTalle1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #214354;
+  font-size: 2rem;
+  padding: 20px 20px 20px 20px; }
+
+.contacto__form {
+  color: #214354;
+  font-size: 1.5rem;
+  padding: 20px 20px 20px 20px; }
+
+.contacto__form {
+  font-family: 'Montserrat', sans-serif;
+  color: #214354;
+  font-size: 2rem; }
+
+.nosotros__table {
+  color: #214354;
+  font-size: 1.5rem;
+  margin: 20px 20px 20px 20px; }
+
+.nosotros__logo {
+  margin: auto;
+  display: block; }
+
+.carrito--size {
+  font-size: 2rem;
+  padding: 20px 20px 20px 20px; }
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: 20px 20px 20px 20px; }
+
+.bg--footer {
+  margin-top: 50px;
+  padding: 30px 10px 10px 10px;
+  text-align: center; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 5px 10px 12px 15px;
+  background-color: white; }
+
+ul {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #214354;
+  font-size: 2rem; }
+
+ul ul {
+  position: absolute;
+  display: none; }
+
+ul ul li {
+  display: block; }
+
+ul li:hover ul {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+ul li a {
+  padding: 1.6rem; }
+
+.container {
+  grid-template-columns: 6fr 2fr 3fr;
+  align-items: center; }
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header header nav";
+  grid-template-columns: 20% auto 35%; }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: nav; }
+
+.imgCuenta {
+  margin-left: 80px; }
+
+.grillaCuenta {
+  display: grid;
+  grid-template-areas: "formulario img";
+  grid-template-columns: 50% 50%; }
+
+.formulario__grid {
+  grid-area: formulario; }
+
+.imgCuenta {
+  grid-area: img; }
+
+.row {
+  text-align: center;
+  margin-top: 100px; }
+
+.categoriasTitle {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 0%; }
+
+.custom-select-lg {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; }
