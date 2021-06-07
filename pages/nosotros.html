@@ -16,55 +16,53 @@
 
 </head>
 <body>
-<div class="grilla">
-	<header>
-		<div>
-            <img src="../assets/img/logo.jpg" alt="logo" alt="logo"  width="100px" height="100px">
-        </div>
-	</header>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light scrolling-navbar">
+            <a class="navbar-brand" href="#"> <img src="../assets/img/logo.jpg" alt="logo" width="100px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sticky-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Sticky-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link active">Inicio</a>
+                    </li>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-nuestro">
-		<div class="container-fluid">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="nosotros.html">Nosotros</a>
-				</li>
-				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Productos
-				</a>
-				<ul class="dropdown-menu tamanio-1" aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item " href="#">Hombre</a></li>
-					<li><a class="dropdown-item" href="#">Mujer</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">Categorias</a></li>
-				</ul>
-				<li><a class="nav-link" href="carrito.html">Carrito</a></li>
-				<li><a class="nav-link" href="contacto.html">Mi Cuenta</a></li>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</nav>
-</div>
+                    <li class="nav-item">
+                        <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu tamanio-1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/productos.html">Hombre</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Mujer</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Categorias</a></li>
+                        </ul>
+                        <li><a class="nav-link" href="../pages/carrito.html">Carrito</a></li>
+                        <li><a class="nav-link" href="../pages/contacto.html">Mi Cuenta</a></li>
+                        </li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+	</header>
 	
-	<section id="quienesSomos">
-		<h1 data-aos="fade-rigth" class="tamanio-2">¿Quienes somos?</h1>
-		<div data-aos="zoom-in">
+	<div class="margin--movil">
+		
+		<div data-aos="zoom-in" class="backColor">
 			<img src="../assets/img/logo.jpg" alt="logoNosotros" width="400px" height="400px"  class="nosotros__logo">
 		</div>
-		<div>
-			<p class="tamanio-2">Melozzy es una tienda de ropa de segunda mano con el objetivo de disminuir la cantidad de ropa que va directo a la basura. Esto hace más largo el ciclo de vida y genera una reducción en el impacto ambiental. El hecho de reutilizar ropa y objetos es un gesto sostenible para el medio ambiente.</p>
+		<div class="nosotros--texto__margin">
+			<h1 data-aos="fade-rigth" class="tamanio-2">¿Quienes somos?</h1>
+			<p class="tamanio-2 sizeMovil"> <b>Melozzy</b> es una tienda de ropa de segunda mano con el objetivo de disminuir la cantidad de ropa que va directo a la basura. Esto hace más largo el ciclo de vida y genera una <b> reducción en el impacto ambiental</b>. El hecho de reutilizar ropa y objetos es un gesto sostenible para el medio ambiente.</p>
 		</div>
-		<div class="btn tamanio-1 padding-2">+ info</div>
-	</section>
+		<div class="btn tamanio-1">+ info</div>
+	</div>
 
     <section id="puntEntrega"  data-aos="fade-left">
 		<h1>Punto de entrega</h1>
@@ -73,10 +71,9 @@
 
 	
 	<footer class="container-fluid">
-
 		<div class="row bg--footer">
 			<div class="col-lg-4 col-xs-12">
-				<img src="../assets/img/logo.jpg" alt="logoFooter" class="logo--footer__ubicacion">
+				<img src="../assets/img/logo.jpg" alt="logoFooter" class="logo--footer__ubicacion" width="300px" height="300px">
 			</div>
 			<div class="col-lg-4 col-xs-12 modificacionMovile">
 				<h3>REDES SOCIALES</h3>
@@ -91,20 +88,13 @@
 				<img src="../assets/img/iconoMaoa.png" alt="iconoMapa" class="bloque" width="20px" height="20px"><span>Rondeau 548 - Córdoba Capital</span>
 			</div>
 		</div>
+		
 		<div class="row rowSinMargin">
 			<div class="col-lg-12 col-xs-12 bg--copy">
 				<p>Powered by: <a href="#">Capell</a></p>
 			</div>
 		</div>
-	
-</footer>
-
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
-    </ol>
-</nav>
+    </footer>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

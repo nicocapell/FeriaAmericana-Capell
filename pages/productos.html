@@ -12,135 +12,196 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 </head>
-<body> 
-<div class="grilla">   
-        <header>
-            <div>
-                <img src="../assets/img/logo.jpg" alt="logo" alt="logo"  width="100px" height="100px">
-            </div>
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-nuestro">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light scrolling-navbar">
+            <a class="navbar-brand" href="#"> <img src="../assets/img/logo.jpg" alt="logo" width="100px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Sticky-nav">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </button>
+            <div class="collapse navbar-collapse" id="Sticky-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a href="../index.html" class="nav-link active">Inicio</a>
                     </li>
+
                     <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
                     </li>
+
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                    </a>
-                    <ul class="dropdown-menu tamanio-1" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Hombre</a></li>
-                        <li><a class="dropdown-item" href="#">Mujer</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Categorias</a></li>
-                    </ul>
-                    <li><a class="nav-link" href="carrito.html">Carrito</a></li>
-                    <li><a class="nav-link" href="contacto.html">Mi Cuenta</a></li>
-                    </li>
+                        <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu tamanio-1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/productos.html">Hombre</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Mujer</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Categorias</a></li>
+                        </ul>
+                        <li><a class="nav-link" href="../pages/carrito.html">Carrito</a></li>
+                        <li><a class="nav-link" href="../pages/contacto.html">Mi Cuenta</a></li>
+                        </li>
                 </ul>
+                
+            </div>
+            
+        </nav>
+	</header>
+
+
+
+    
+<div class="productos__categorias" data-aos="fade-right">       
+    <article >
+        <h1 class="espaciado categoriasTitle tamanio-2">Categorias</h1>
+        <ul class="categoriasTexto">
+            <li> <a href="../pages/productos.html">Buzos</a></li>
+            <li> <a href="../pages/productos.html">Sweters</a></li>
+            <li> <a href="../pages/productos.html">Pantalones</a></li>
+            <li> <a href="../pages/productos.html">Camisas</a></li>
+            <li> <a href="../pages/productos.html">Remeras</a></li>
+            <li> <a href="../pages/productos.html">Camperas</a></li>
+            <li> <a href="../pages/productos.html">Jeans</a></li>
+            <li> <a href="../pages/productos.html">Accesorios</a></li>
+        </ul>
+    </article> 
+</div> 
+
+
+<div>
+    <div class="container marginMovile"> 
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/header2.jpg" alt="Sueter Beige"  class=" sizeProducts">
+                    <h3>Sweter Beige</h3>
+                    <p>$1300</p>
                 </div>
             </div>
-        </nav>
-</div> 
-
-<div id="productos">       
-    <article>
-        <h1>Productos</h1>
-        <section>
-            <ul class="productos__categorias">
-                <li>Camperas</li>
-                <li>Buzos</li>
-                <li>Pantalones</li>
-                <li>Camisas</li>
-                <li>Sweters</li>
-            </ul>
-        </section>
-    </article>
-</div> 
-
-<div id="imagenesProductos">
-        <section>
-            <div class="img-flex" data-aos="flip-up" > 
-            <img src="../assets/img/header2.jpg" alt="Sueter Beige"  class="imgProductos sizeProducts">
-            <img src="../assets/img/header3.jpg" alt="Pantalon de vestir"  class="imgProductos sizeProducts">
-            <img src="../assets/img/header4.jpg" alt="Buzo verde"  class="imgProductos sizeProducts" >
-            <img src="../assets/img/product4.jpg" alt="Vans"" class="imgProductos sizeProducts">
-            <img src="../assets/img/product5.jpg" alt="Camisa cuadros negra" class="imgProductos sizeProducts">
-            <img src="../assets/img/p6.jpg" alt="img6" class="imgProductos sizeProducts"> 
-            <img src="../assets/img/p7.jpg" alt="img7" class="imgProductos sizeProducts">
-            <img src="../assets/img/p8.jpg" alt="img8" class="imgProductos sizeProducts">
-            <img src="../assets/img/p9.jpg" alt="img9" class="imgProductos sizeProducts">
-            <img src="../assets/img/p10.jpg" alt="img10" class="imgProductos sizeProducts">
-            <img src="../assets/img/p11.jpg" alt="img11" class="imgProductos sizeProducts ">
-            <img src="../assets/img/p12.jpg" alt="img12" class="imgProductos sizeProducts">
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/header3.jpg" alt="Pantalon de vestir"  class=" sizeProducts">
+                    <h3>Pantalon de vestir</h3>
+                    <p>$1500</p>
+                </div>
             </div>
-            <div>
-                <table border="1" cellpadding="1" cellspacing="1" class="productos__tabla">
-                <tr><th>Tipo <td>Buzo Brown</td></th>
-                </tr>
-                <tr><th>Marca <td>Powers</td></th>
-                </tr>
-                <tr><th>Estado <td>10/10</td></th>
-                </tr>
-                <tr><th> Medidas <td>Largo 64; Ancho 58; Mangas 64</td></th>
-                </tr>
-                </table>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/header4.jpg" alt="Buzo verde"  class=" sizeProducts" >
+                    <h3>Buzo verde</h3>
+                    <p>$1300</p>
+                </div>
             </div>
-        </section>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/product4.jpg " alt="Vans" class=" sizeProducts">
+                    <h3>Vans</h3>
+                    <p>$2500</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/product5.jpg" alt="Camisa cuadros negra" class=" sizeProducts">
+                    <h3>Camisa cuadros negra</h3>
+                    <p>$900</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p6.jpg" alt="Pantalon Beige" class=" sizeProducts"> 
+                    <h3>Pantalon Beige</h3>
+                    <p>$1700</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p7.jpg" alt="Buzo de algodon" class=" sizeProducts">
+                    <h3>Buzo de algodon</h3>
+                    <p>$1300</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p8.jpg" alt="Remera y pantalon" class=" sizeProducts">
+                    <h3>Remera "Coming" + Pantalon</h3>
+                    <p>$1699</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p9.jpg" alt="Buzo oso" class=" sizeProducts">
+                    <h3>Buzo "oso"</h3>
+                    <p>$800</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p10.jpg" alt="Remera normal day" class=" sizeProducts">
+                    <h3>Remera "Normal Day"</h3>
+                    <p>$1000</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p11.jpg" alt="Remera idols" class=" sizeProducts ">
+                    <h3>Remera "Idols"</h3>
+                    <p>$600</p>
+                </div>
+            </div>
+            <div class="img-flex col-xs-10 col-sm-6 col-md-4" data-aos="flip-up" > 
+                <div class="card">
+                    <img src="../assets/img/p12.jpg" alt="Pollera" class=" sizeProducts">
+                    <h3>Pollera</h3>
+                    <p>$1500</p>
+                </div>
+            </div>
+            <div class="productos__tabla">
+                <table border="1" cellpadding="1" cellspacing="1" >
+                    <tr><th>Tipo <td>Pollera Brown</td></th></tr>
+                    <tr><th>Marca <td>Powers</td></th></tr>
+                    <tr><th>Estado <td>10/10</td></th></tr>
+                    <tr><th> Medidas <td>Largo 64; Ancho 58; Mangas 64</td></th></tr>
+            </table>
+            </div>
+            <section class="selectorTalle1">
+                <div>Decime que talle queres
+                    <select name="Elegí tu talle" id=""> 
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">XL</option>
+                    </select></div>
+            </section>
     </div>
-        <section class="selectorTalle1">
-            <div>Decime que talle queres
-                <select name="Elegí tu talle" id=""> 
-                    <option value="S">Small</option>
-                    <option value="M">Medium</option>
-                    <option value="L">Large</option>
-                    <option value="XL">XL</option>
-                </select></div>
-        </section>
-    </article>
+</div>
 
-    
-	<footer class="container-fluid">
 
-        <div class="row bg--footer">
-            <div class="col-lg-4 col-xs-12">
-                <img src="../assets/img/logo.jpg" alt="logoFooter" class="logo--footer__ubicacion">
-            </div>
-            <div class="col-lg-4 col-xs-12 modificacionMovile">
-                <h3>REDES SOCIALES</h3>
-                <a href="#"><img src="../assets/img/iconFace.png" alt="logoFace" class="bloque" width="20px" height="20px"></a>
-                <a href="#"><img src="../assets/img/iconInsta.png" alt="logoInsta" class="bloque" width="20px" height="20px"></a>
 
-            </div>
-            <div class="col-lg-4 col-xs-12 modificacionMovile">
-                <h3>CONTACTO</h3>
-                <div>
-                <img src="../assets/img/iconMail.png" alt="iconoEmail" class="bloque" width="20px" height="20px"><span>melozzyferia@gmail.com</span></div>
-                <img src="../assets/img/iconoMaoa.png" alt="iconoMapa" class="bloque" width="20px" height="20px"><span>Rondeau 548 - Córdoba Capital</span>
-            </div>
+<footer class="container-fluid">
+    <div class="row bg--footer">
+        <div class="col-lg-4 col-xs-12">
+            <img src="../assets/img/logo.jpg" alt="logoFooter" class="logo--footer__ubicacion" width="300px" height="300px">
         </div>
-        <div class="row rowSinMargin">
-            <div class="col-lg-12 col-xs-12 bg--copy">
-                <p>Powered by: <a href="#">Capell</a></p>
-            </div>
+        <div class="col-lg-4 col-xs-12 modificacionMovile">
+            <h3>REDES SOCIALES</h3>
+            <a href="#"><img src="../assets/img/iconFace.png" alt="logoFace" class="bloque" width="20px" height="20px"></a>
+            <a href="#"><img src="../assets/img/iconInsta.png" alt="logoInsta" class="bloque" width="20px" height="20px"></a>
+
         </div>
+        <div class="col-lg-4 col-xs-12 modificacionMovile">
+            <h3>CONTACTO</h3>
+            <div>
+            <img src="../assets/img/iconMail.png" alt="iconoEmail" class="bloque" width="20px" height="20px"><span>melozzyferia@gmail.com</span></div>
+            <img src="../assets/img/iconoMaoa.png" alt="iconoMapa" class="bloque" width="20px" height="20px"><span>Rondeau 548 - Córdoba Capital</span>
+        </div>
+    </div>
     
+    <div class="row rowSinMargin">
+        <div class="col-lg-12 col-xs-12 bg--copy">
+            <p>Powered by: <a href="#">Capell</a></p>
+        </div>
+    </div>
 </footer>
-
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Productos</li>
-    </ol>
-</nav>
 
 
     
